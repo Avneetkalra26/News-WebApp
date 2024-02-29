@@ -1,0 +1,44 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  background-color: #b70404;
+}
+
+#header-span {
+  font-style: italic;
+  font-size: small;
+}
+#btn-section {
+  background-color: transparent;
+}
+#btn-section #btn-style {
+  border-bottom: 5px solid #b70404;
+  font-style: italic;
+
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+}
+#article-heading {
+  display: block;
+  margin-top: 14px;
+}
+#article-span {
+  font-weight: bold;
+}
+#article-info {
+  font-size: normal;
+  text-align: justify;
+  margin-top: 10px;
+  width: 100%;
+}
+#article-links {
+  border: 2px solid #b70404;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#article-data {
+  border-radius: 20px;
+}

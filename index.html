@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+
+    <link rel="icon" href="Icons/FaviconIcon.png" />
+
+    <!-- Link for font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Links for connect with bootstrap -->
+    <link rel="stylesheet" href="BootstrapConnect/bootstrap.css" />
+    <script src="BootstrapConnect/bootstrap.js"></script>
+
+    <!-- Link with style.css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container-fluid mt-4" id="header">
+      <div class="row align-items-center">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <img
+            src="Icons/NewsPaperIcon.png"
+            alt=""
+            width="50px"
+            height="70px"
+            class="py-4 mx-5 img-fluid"
+          />
+        </div>
+        <div
+          class="col-lg-8 col-md-6 col-sm-8 col-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1 class="text-white mb-3 text-center">NEWS WEBSITE</h1>
+          <span class="text-white text-center mb-0" id="header-span"
+            >Daily Press: Stay Informed, Stay Ahead</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="container mt-4 px-5" id="btn-section">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            onclick="renderData('business')"
+          >
+            Business
+          </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            onclick="renderData('politics')"
+          >
+            Politics
+          </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            onclick="renderData('sports')"
+          >
+            Sports
+          </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            style="border-bottom: 5px solid #b70404; font-style: italic"
+            onclick="renderData('technology')"
+          >
+            Technology
+          </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            onclick="renderData('travel')"
+          >
+            Travel
+          </button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-3">
+          <button
+            type="button"
+            class="btn"
+            id="btn-style"
+            onclick="renderData('science')"
+          >
+            Science
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Article Container -->
+    <div id="article-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
